@@ -57,3 +57,23 @@ body {
 		transform: translate3d(4px, 0, 0);
 	}
 }
+
+
+  
+.avatar.online {
+	position: relative;
+  }
+  
+  .avatar.online::after {
+	content: "";
+	position: absolute;
+	top: 3px; /* pushes it slightly down */
+	right: 1px;
+	width: 12px; /* slightly bigger */
+	height: 12px;
+	background-color: #22c55e; /* Tailwind green-500 */
+	border: 2px solid white;
+	border-radius: 9999px;
+  }
+  
+  

@@ -13,7 +13,7 @@ export const SocketContextProvider = ({ children }) => {
 
   useEffect(() => {
     if (authUser) {
-      const newSocket = io("https://chatting-out.onrender.com", {
+      const newSocket = io("http://localhost:5000", {
         query: {
           userId: authUser._id,
         },
